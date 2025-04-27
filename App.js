@@ -6,6 +6,7 @@ import NotificationFamily from "./NotificationFamily";
 import CaregiverAddTask from "./CaregiverAddTask";
 import CaregiverTaskOverview from "./CaregiverTaskOverview";
 import CaregiverCalendar from "./CaregiverCalendar";
+import ChooseRole from "./ChooseRole";
 
 function App() {
   const [userType] = useState("caregiveraddtask");
@@ -19,6 +20,7 @@ function App() {
       {userType === "caregiveraddtask" && <CaregiverAddTask />}
       {userType === "caregivertaskoverview" && <CaregiverTaskOverview />}
       {userType === "caregivercalendar" && <CaregiverCalendar />}
+      {userType === "chooserole" && <ChooseRole />}
     </div>
   );
 }
