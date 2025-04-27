@@ -1,0 +1,109 @@
+.notification-container {
+  background-color: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed; /* Keep the header fixed at the top */
+  top: 5px;
+  left: 0;
+  z-index: 1000; /* Ensure the header stays on top */
+  padding: 15px 0; /* Add padding for the header */
+}
+
+.notifications {
+  margin-top: 150px;
+  color: #004aad;
+}
+
+.logo {
+  height: 115px;
+  margin: 0 auto;
+}
+
+.icon {
+  color: #004aad;
+  font-size: 24px;
+  transform: scale(1.2);
+  padding: 5%;
+  margin: auto;
+}
+
+/* Optional: Add hover effects for icons */
+.icon:hover {
+  color: lightgray;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.content {
+  color: black;
+  border-radius: 20px;
+  width: 80%;
+  height: 60%;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px; /* Space for the fixed footer */
+  box-shadow: 0px 4px 10px rgba(0, 0.1, 0, 0.3);
+}
+
+.notification-box {
+  overflow-y: auto;
+  max-height: 450px;
+  margin-bottom: auto;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 12px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.text strong {
+  font-size: 18px;
+}
+
+.text p {
+  margin: 0;
+  font-size: 16px;
+  color: gray;
+}
+
+.view-all {
+  text-align: center;
+  margin-top: auto;
+  color: rgb(168, 168, 171);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure footer stays on top of other elements */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}

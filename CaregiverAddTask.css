@@ -1,0 +1,117 @@
+/* Full page */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.addtaskheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed; /* Keep the header fixed at the top */
+  top: 5px;
+  left: 0;
+  z-index: 1000; /* Ensure the header stays on top */
+  padding: 15px 0; /* Add padding for the header */
+}
+
+/* Logo */
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;  /* Added padding for spacing */
+  margin-top: 60px; /* Removed margin from the top */
+  height: calc(100vh - 100px); /* Adjusting height to account for header */
+  overflow-y: auto; /* Allow vertical scrolling if necessary */
+}
+
+/* Container for task inputs */
+.task-container {
+  margin-top: 20px;
+  width: 85%;
+  background-color: white; /* Background color for visibility */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  padding: 30px; /* Spacing inside the container */
+}
+
+/* Top part: back icon + title */
+.top-row {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width */
+  margin-bottom: 10px; /* Margin below the top row */
+}
+
+.back-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
+  color: #004aad;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #004aad;
+}
+
+/* Input fields */
+.input {
+  width: 90%; /* Full width of the container */
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Add task button */
+.add-button {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #003a8c;
+}
+
+/* Bottom Navigation */
+.footer {
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+  border-top: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  color: #004aad;
+  cursor: pointer;
+}
