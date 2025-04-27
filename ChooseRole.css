@@ -1,0 +1,60 @@
+.choose-role-container {
+    display: flex;
+    flex-direction: column; /* Stack logo and card vertically */
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: white; /* Light gray background */
+}
+
+.choose-role-logo {
+    width: 250px; /* Match the logo size from your previous code */
+    height: auto;
+    margin-bottom: 10px; /* Negative margin to overlap the top of the card */
+    z-index: 1; /* Ensure the logo is above the card */
+}
+
+.choose-role-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 30px;
+    width: 300px; /* Match the width of your calendar container */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333; /* Dark gray for the heading */
+    margin-bottom: 5px;
+}
+
+.choose-role-label {
+    font-size: 16px;
+    color: #666; /* Medium gray for the label */
+    margin-bottom: 30px;
+}
+
+.choose-role-button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.choose-role-button:hover {
+    background-color: #004aad; /* Slightly darker blue on hover */
+}
